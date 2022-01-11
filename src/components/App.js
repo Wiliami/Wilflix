@@ -4,13 +4,10 @@ import dadosIniciais from './data/dados_iniciais.json';
 import BannerMain from './BannerMain';
 import Carousel from './Carousel';
 import Footer from './Footer';
-
-function App() {
+const App = () => {
   return (
     <div style={{ background: "#141414" }}>
       <Menu />
-
-        
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
@@ -46,7 +43,4 @@ function App() {
     </div>
   );
 }
-
-      
-
 export default App;
